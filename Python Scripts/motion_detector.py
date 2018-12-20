@@ -20,8 +20,8 @@ def copy_to_blob (file_long_name, file_name):
         )
 
 def capture_image(file_name):
-    camera = PiCamera(resolution = (1024, 768))
-    camera.exposure_mode = 'auto'
+    camera = PiCamera(resolution = (2048, 1536))
+    #camera.exposure_mode = 'auto'
     camera.rotation = 180
     camera.capture(file_name)
     camera.close()
